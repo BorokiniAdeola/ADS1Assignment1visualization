@@ -75,7 +75,9 @@ def plot_pie_chart(year, countries):
     
     plt.pie(gdp_scan, labels=gdp_scan.index, autopct='%2.1f%%')
     plt.title(f'GDPs of 3 Scandinavian Countries(Finland,Norway & Sweden)')
-    plt.legend(loc='best')
+    plt.axis('equal')
+    plt.legend(loc='lower left')
+    
     plt.show()
 
 
